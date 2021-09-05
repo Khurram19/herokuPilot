@@ -15,6 +15,7 @@ neg = 0
 face = 0
 switch = 1
 rec = 0
+app = Flask(__name__, template_folder='./templates')
 
 # make shots directory to save pics
 try:
@@ -27,7 +28,6 @@ net = cv2.dnn.readNetFromCaffe('./saved_model/deploy.prototxt.txt',
                                './saved_model/res10_300x300_ssd_iter_140000.caffemodel')
 
 # instatiate flask app
-app = Flask(__name__, template_folder='./templates')
 
 
 camera = cv2.VideoCapture(0)
