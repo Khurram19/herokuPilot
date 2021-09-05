@@ -23,7 +23,6 @@ chardet
 click==7.1.2
 colorama==0.4.4
 conda
-conda-package-handling
 cryptography
 cycler==0.10.0
 cymem==2.0.5
